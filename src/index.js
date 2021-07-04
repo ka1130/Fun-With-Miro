@@ -17,14 +17,6 @@ function run() {
           });
         },
       },
-      bottomBar: {
-        title: 'LOREM IPSUM',
-        svgIcon:
-          '<circle cx="12" cy="12" r="9" fill="none" fill-rule="evenodd" stroke="green" stroke-width="2"/>',
-        onClick: () => {
-          alert('Hi!');
-        },
-      },
     },
   });
 }

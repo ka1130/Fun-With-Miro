@@ -7,14 +7,32 @@
 
   <body>
     <div class="scrollable-container">
-      <button id="addRow" class="add-row-button" onclick="addRowInput('')">Add Row</button>
+      <button
+        id="addRow"
+        class="add-row-button"
+        onclick="addRowInput('')"
+      >
+        Add Row
+      </button>
       <div id="rows"></div>
       <button id="submit" class="build-button">Build template</button>
     </div>
     <script src="https://miro.com/app/static/sdk.1.1.js"></script>
     <script src="src/builder.js"></script>
     <script>
+      const rowsContainer = document.getElementById('rows');
 
+      addRowInput('FRONT-END');
+      addRowInput('BACK-END');
+      addRowInput('DESIGN');
+      addRowInput('MARKETING');
+
+      document
+        .getElementById('submit')
+        .addEventListener('click', () =>
+          alert('implement drawTemplate fn'),
+        );
+      // .addEventListener('click', () => drawTemplate(getLabels()));
     </script>
   </body>
 </html>
