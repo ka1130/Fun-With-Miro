@@ -3,23 +3,6 @@
   <head>
     <script src="https://miro.com/app/static/sdk.1.1.js"></script>
     <script src="src/index.js"></script>
-    <script>
-      console.log("foo");
-      miro.onReady(() => {
-        miro.initialize({
-          extensionPoints: {
-            bottomBar: {
-              title: "LOREM IPSUM",
-              svgIcon:
-                '<circle cx="12" cy="12" r="9" fill="red" fill-rule="evenodd" stroke="blue" stroke-width="2"/>',
-              onClick: () => {
-                alert("Hi!");
-              },
-            },
-          },
-        });
-      });
-    </script>
   </head>
   <body>
     Hello Miro 2
