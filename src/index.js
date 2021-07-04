@@ -12,7 +12,9 @@ function run() {
         toolbarSvgIcon: icon24,
         librarySvgIcon: icon48,
         onClick: () => {
-          alert('You clicked me');
+          miro.board.ui.openLibrary('builder.html', {
+            title: "Let's have fun with Miro",
+          });
         },
       },
       bottomBar: {
